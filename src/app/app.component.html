@@ -10,20 +10,25 @@
 <p [class]="appliedCSSClass">This is color green using the myClass property</p>
 
 <p [class.blue]="notappliedCSSClass">
-  This plain text applied the myClass property..
+  This text applied the myClass property..
 </p>
 
 <!-- Two-way data binding -->
 <input [(ngModel)]="myName" placeholder="Enter your name" />
-<p>Hello, {{ myName }} !!</p>
+<p>Hello, {{ myName }}</p>
 
 <!-- Event Binding -->
 
-<button (click)="onButtonClick()">Click Me</button>
+<button (click)="onButtonClick1()">Kare - kare</button>
+<button (click)="onButtonClick2()">Adobo</button>
+<button (click)="onButtonClick3()">Caldereta</button>
+<button (click)="onButtonClick4()">Sisig</button>
+<button (click)="onButtonClick5()">Tinola</button>
 
 <p *ngIf="message">{{ message }}</p>
-
-<button (click)="showAlert()">Click Me</button>
+<br />
+<br />
+<button (click)="showAlert()">Cancel Order</button>
 
 <!-- ngIf Directive -->
 <ng-template [ngIf]="showElement">

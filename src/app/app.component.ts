@@ -7,7 +7,7 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   //name = 'Angular ' + VERSION.major;
-  appName = 'This is a One-way Data binding example..';
+  appName = 'Welcome to kapampangan cuisine';
   clientName: string = 'Carl';
 
   appliedCSSClass = 'green';
@@ -18,17 +18,29 @@ export class AppComponent {
 
   message = '';
 
-  onButtonClick() {
-    this.message = 'Button was clicked!';
+  onButtonClick1() {
+    this.message = 'You choose Kare - kare';
+  }
+  onButtonClick2() {
+    this.message = 'You choose Adobo';
+  }
+  onButtonClick3() {
+    this.message = 'You choose Caldereta';
+  }
+  onButtonClick4() {
+    this.message = 'You choose Sisig';
+  }
+  onButtonClick5() {
+    this.message = 'You choose Tinola';
   }
 
   //Event as an alert()
   showAlert() {
-    alert('Button was clicked!');
+    alert('You canceled your order!');
   }
 
   // for two-way data binding demo
-  myName = '';
+  myName = 'may i take your order?';
 
   //ngIf Demo
   showElement = false;
