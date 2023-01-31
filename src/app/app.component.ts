@@ -53,7 +53,7 @@ export class AppComponent {
 
   //ngStyle
   color = 'green';
-  othercolor = 'red';
+  othercolor = 'blue';
 
   //ngClass
   isBold = true;
