@@ -25,6 +25,14 @@
 <button (click)="onButtonClick4()">Sisig</button>
 <button (click)="onButtonClick5()">Tinola</button>
 
+<!-- ngFor Directive -->
+
+<ul>
+  <li *ngFor="let item of items" [ngStyle]="{ color: othercolor }">
+    {{ item }}
+  </li>
+</ul>
+
 <p *ngIf="message">{{ message }}</p>
 <br />
 <br />
@@ -34,14 +42,6 @@
 <ng-template [ngIf]="showElement">
   <p>This element is displayed if showElement is true</p>
 </ng-template>
-
-<!-- ngFor Directive -->
-
-<ul>
-  <li *ngFor="let item of items" [ngStyle]="{ color: othercolor }">
-    {{ item }}
-  </li>
-</ul>
 
 <!-- ngSwitch Directive -->
 
