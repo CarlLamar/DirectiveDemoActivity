@@ -8,7 +8,7 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   //name = 'Angular ' + VERSION.major;
   appName = 'Welcome to kapampangan cuisine';
-  clientName: string = 'Carl';
+  clientName: string = 'Carl Gegante';
 
   appliedCSSClass = 'green';
   notappliedCSSClass = false;
