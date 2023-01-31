@@ -49,7 +49,7 @@ export class AppComponent {
   items = ['Kare - kare', 'Adobo', 'Caldereta', 'Sisig', 'Tinola'];
 
   //ngSwitch
-  selectedOption = 5;
+  selectedOption = 1;
 
   //ngStyle
   color = 'green';
