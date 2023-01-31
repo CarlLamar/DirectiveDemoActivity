@@ -8,7 +8,7 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   //name = 'Angular ' + VERSION.major;
   appName = 'This is a One-way Data binding example..';
-  clientName: string = 'Joseph';
+  clientName: string = 'Carl';
 
   appliedCSSClass = 'green';
   notappliedCSSClass = false;
@@ -34,17 +34,18 @@ export class AppComponent {
   showElement = false;
 
   //ngFor Demo
-  items = ['Item 1', 'Item 2', 'Item 3'];
+  items = ['Kare - kare', 'Adobo', 'Caldereta', 'Sisig', 'Tinola'];
 
   //ngSwitch
-  selectedOption = 3;
+  selectedOption = 5;
 
   //ngStyle
   color = 'green';
+  othercolor = 'red';
 
   //ngClass
   isBold = true;
-  isItalic = true;
+  isItalic = false;
 
   //ngModel
   name = '';

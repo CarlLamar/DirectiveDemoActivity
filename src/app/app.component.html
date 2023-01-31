@@ -5,12 +5,12 @@
 
 <input type="text" [value]="clientName" />
 
-<p [style.color]="myColor">Text color is styled using style binding</p>
+<p [style.color]="myColor">This is color red using the myColor property</p>
 
-<p [class]="appliedCSSClass">This text applied the myClass property..</p>
+<p [class]="appliedCSSClass">This is color green using the myClass property</p>
 
 <p [class.blue]="notappliedCSSClass">
-  This text applied the myClass property..
+  This plain text applied the myClass property..
 </p>
 
 <!-- Two-way data binding -->
@@ -32,16 +32,21 @@
 
 <!-- ngFor Directive -->
 
-<ol>
-  <li *ngFor="let item of items">{{ item }}</li>
-</ol>
+<ul>
+  <li *ngFor="let item of items" [ngStyle]="{ othercolor: othercolor }">
+    {{ item }}
+  </li>
+</ul>
 
 <!-- ngSwitch Directive -->
 
 <ng-container [ngSwitch]="selectedOption">
-  <p *ngSwitchCase="1">Option 1 is selected</p>
-  <p *ngSwitchCase="2">Option 2 is selected</p>
-  <p *ngSwitchDefault>No option is selected</p>
+  <p *ngSwitchCase="1">You choose Kare - kare</p>
+  <p *ngSwitchCase="2">You choose Adobo</p>
+  <p *ngSwitchCase="3">You choose Caldereta</p>
+  <p *ngSwitchCase="4">You choose Sisig</p>
+  <p *ngSwitchCase="5">You choose Tinola</p>
+  <p *ngSwitchDefault>No meal is selected</p>
 </ng-container>
 
 <!-- ngStyle Directive -->
